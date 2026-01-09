@@ -83,7 +83,7 @@ export default function App() {
   ];
 
   const projects = [
-    { id: 1, title: 'HR Management System', description: 'Developed a HR Management System to streamline employee data, attendance, leave management, and role-based access control.', tech: ['React', 'Node', 'MongoDB', 'Express'], link: 'https://hrmsth.varcel.app/' },
+    { id: 1, title: 'HR Management System', description: 'Developed a HR Management System to streamline employee data, attendance, leave management, and role-based access control.', tech: ['React', 'Node', 'MongoDB', 'Express'], link: 'https://hrmsth.vercel.app/' },
     { id: 2, title: 'Expense Manager', description: 'A full-featured expense manager with budget tracking and financial insights.', tech: ['PHP', 'MYSQL', 'JavaScript'], link: 'https://expensemanager27.great-site.net' },
     { id: 3, title: 'Particle Tracking', description: 'It trackes your hand movement and responds with different shapes', tech: ['HTML', 'Three.js', 'MediaPipe', 'WebGL'], link: 'https://particle-tracking.vercel.app/' },
    // { id: 4, title: 'Portfolio Generator', description: 'SaaS platform that helps developers create beautiful portfolio websites in minutes.', tech: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma'], link: 'https://example.com/portfolio-generator' }

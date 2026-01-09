@@ -23,7 +23,7 @@ function Footer({ scrollToSection }) {
           <div className="footer-section">
             <h4>Projects</h4>
             <ul className="footer-links">
-              <li><a href="https://hrmsth.varcel.app/" target="_blank" rel="noopener noreferrer">HR Management System</a></li>
+              <li><a href="https://hrmsth.vercel.app/" target="_blank" rel="noopener noreferrer">HR Management System</a></li>
               <li><a href="https://expensemanager27.great-site.net" target="_blank" rel="noopener noreferrer">Expense Manager</a></li>
               <li><a href="https://particle-tracking.vercel.app/" target="_blank" rel="noopener noreferrer">Particle Tracking</a></li>
             </ul>
