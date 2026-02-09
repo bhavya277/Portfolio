@@ -13,15 +13,25 @@ function Projects({ projects }) {
         </motion.p>
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ staggerChildren: 0.15 }} className="projects-grid">
           {projects.map((proj, i) => (
-            <motion.div 
-              key={proj.id} 
-              initial={{ opacity: 0, y: 50 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6, delay: i * 0.15 }} 
+            <motion.div
+              key={proj.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{
+                y: -10,
+                rotateX: -5,
+                rotateY: 5,
+                transition: { duration: 0.1 }
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
               className="project-card"
               onClick={() => window.open(proj.link, '_blank')}
-              style={{ cursor: 'pointer' }}
+              style={{
+                cursor: 'pointer',
+                perspective: '1000px',
+                transformStyle: 'preserve-3d'
+              }}
             >
               <h3>{proj.title}</h3>
               <p>{proj.description}</p>

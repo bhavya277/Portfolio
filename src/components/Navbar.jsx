@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar({ scrolled, toggleTheme, isDarkMode, scrollToSection }) {
@@ -16,17 +17,17 @@ function Navbar({ scrolled, toggleTheme, isDarkMode, scrollToSection }) {
         setIsMobileMenuOpen(false);
       }
     };
-    
+
     // Close mobile menu when clicking outside
     const handleClickOutside = (event) => {
       if (isMobileMenuOpen && !event.target.closest('.navbar-container')) {
         setIsMobileMenuOpen(false);
       }
     };
-    
+
     window.addEventListener('resize', handleResize);
     document.addEventListener('click', handleClickOutside);
-    
+
     return () => {
       window.removeEventListener('resize', handleResize);
       document.removeEventListener('click', handleClickOutside);
@@ -36,9 +37,21 @@ function Navbar({ scrolled, toggleTheme, isDarkMode, scrollToSection }) {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <div className="navbar-logo"><h2>Bhavya Modi</h2></div>
-        <button 
-          className="mobile-menu-toggle" 
+        <div className="navbar-logo">
+          <motion.h2
+            whileHover={{
+              scale: 1.1,
+              rotateX: 10,
+              rotateY: 10,
+              transition: { duration: 0.2 }
+            }}
+            style={{ transformStyle: 'preserve-3d', cursor: 'default' }}
+          >
+            Bhavya Modi
+          </motion.h2>
+        </div>
+        <button
+          className="mobile-menu-toggle"
           onClick={(e) => {
             e.stopPropagation();
             setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -48,7 +61,7 @@ function Navbar({ scrolled, toggleTheme, isDarkMode, scrollToSection }) {
         >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
-        <div 
+        <div
           className={`navbar-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}
           onClick={(e) => e.stopPropagation()}
         >

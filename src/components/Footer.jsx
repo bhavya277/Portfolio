@@ -8,7 +8,7 @@ function Footer({ scrollToSection }) {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Bhavya Modi</h3>
-            <p>IT Engineering Student at Birla Vishvakarma Mahavidyalaya.Having a passion for Python and Cyber Security.</p>
+            <p>IT Engineering Student at Birla Vishvakarma Mahavidyalaya.Having a passion for Python and Data Science.</p>
           </div>
           <div className="footer-section">
             <h4>Quick Links</h4>
@@ -23,8 +23,9 @@ function Footer({ scrollToSection }) {
           <div className="footer-section">
             <h4>Projects</h4>
             <ul className="footer-links">
-              <li><a href="https://hrmsth.vercel.app/" target="_blank" rel="noopener noreferrer">HR Management System</a></li>
-              <li><a href="https://expensemanager27.great-site.net" target="_blank" rel="noopener noreferrer">Expense Manager</a></li>
+              <li><a href="https://github.com/sagarkumar1911/EduQuest-AI.git" target="_blank" rel="noopener noreferrer">Saarthi AI</a></li>
+              <li><a href="https://github.com/bhavya277/HRMS_TH.git" target="_blank" rel="noopener noreferrer">HR Management System</a></li>
+              <li><a href="https://github.com/bhavya277/Expense-Manager.git" target="_blank" rel="noopener noreferrer">Expense Manager</a></li>
               <li><a href="https://particle-tracking.vercel.app/" target="_blank" rel="noopener noreferrer">Particle Tracking</a></li>
             </ul>
           </div>
@@ -38,7 +39,7 @@ function Footer({ scrollToSection }) {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 Bhavya Modi. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bhavya Modi. All rights reserved.</p>
           <p className="footer-credit">Designed & Built by Bhavya Modi</p>
         </div>
       </div>

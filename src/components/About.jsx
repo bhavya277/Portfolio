@@ -11,21 +11,28 @@ function About({ handleDownloadResume }) {
         </motion.h2>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="about-content">
           <div className="about-main">
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }} 
-              whileInView={{ opacity: 1, x: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.6 }} 
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{
+                rotateY: 15,
+                rotateX: -5,
+                scale: 1.05,
+                transition: { duration: 0.3 }
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
               className="about-photo"
+              style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
             >
-              <img src="profile-photo.jpeg" alt="Bhavya Modi" />
+              <img src="profile-photo.jpeg" alt="Bhavya Modi" style={{ borderRadius: '20px' }} />
             </motion.div>
             <div className="about-text">
               <h3>I'm Bhavya Modi</h3>
-              <p>I am passionate about Python programming & Cyber Security</p>
-              <p>My journey in Python programming & Cyber Security has led me to work on various projects that have significantly contributed to my growth as a developer. I love creating solutions that make a difference and continuously learning new technologies.</p>
+              <p>A second-year IT undergraduate with a strong interest in Python programming and Data Science & Analytics, focused on building a solid foundation in problem-solving and data-driven insights.</p>
+              <p>I'm always eager to learn, collaborate, and connect with like-minded data and tech professionals and I love creating solutions that make a difference and continuously learning new technologies.</p>
               <div className="resume-download-btn-wrapper">
-                <motion.button 
+                <motion.button
                   onClick={handleDownloadResume}
                   className="resume-download-btn"
                   whileHover={{ scale: 1.02 }}
@@ -44,7 +51,7 @@ function About({ handleDownloadResume }) {
             <div className="about-card">
               <h4>Education</h4>
               <ul>
-                <li>B.Tech in Information Technology</li>
+                <li>B.Tech in Information Technology with Honors in Data Science & Analytics</li>
                 <li>Higher Secondary School Certificate</li>
               </ul>
             </div>
@@ -52,7 +59,8 @@ function About({ handleDownloadResume }) {
               <h4>Interests</h4>
               <ul>
                 <li>Python </li>
-                <li>Cyber Security</li>
+                <li>Data Science</li>
+                <li>Data Analytics</li>
                 <li>Problem Solving</li>
                 <li>UI/UX Design</li>
               </ul>
