@@ -35,7 +35,7 @@ export default function App() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
+
     // Fallback: If file doesn't exist, show alert
     link.onerror = () => {
       alert('Resume file not found. Please add resume.pdf to the public folder.');
@@ -50,43 +50,44 @@ export default function App() {
   };
 
   const skills = [
-    { 
-      skill: 'Python', 
+    {
+      skill: 'Python',
       value: 90,
       description: 'Built responsive layouts, forms, and landing pages with semantic HTML5'
     },
-    { 
-      skill: 'PHP', 
+    {
+      skill: 'PHP',
       value: 80,
       description: 'Created modern UIs with Flexbox, Grid, animations, and responsive design'
     },
-    { 
-      skill: 'JavaScript', 
+    {
+      skill: 'JavaScript',
       value: 80,
       description: 'Developed interactive web apps with ES6+, async operations, and DOM manipulation'
     },
-    { 
-      skill: 'C++', 
+    {
+      skill: 'C++',
       value: 70,
       description: 'Solved algorithmic problems and built efficient data structures'
     },
-    { 
-      skill: 'Git & Github', 
+    {
+      skill: 'Git & Github',
       value: 85,
       description: 'Proficient in Git & GitHub for version control, collaboration, and code management'
     },
-    { 
-      skill: 'Database', 
+    {
+      skill: 'Database',
       value: 80,
       description: 'Designed schemas, wrote queries, and optimized database performance'
     }
   ];
 
   const projects = [
-    { id: 1, title: 'HR Management System', description: 'Developed a HR Management System to streamline employee data, attendance, leave management, and role-based access control.', tech: ['React', 'Node', 'MongoDB', 'Express'], link: 'https://hrmsth.vercel.app/' },
-    { id: 2, title: 'Expense Manager', description: 'A full-featured expense manager with budget tracking and financial insights.', tech: ['PHP', 'MYSQL', 'JavaScript'], link: 'https://expensemanager27.great-site.net' },
-    { id: 3, title: 'Particle Tracking', description: 'It trackes your hand movement and responds with different shapes', tech: ['HTML', 'Three.js', 'MediaPipe', 'WebGL'], link: 'https://particle-tracking.vercel.app/' },
-   // { id: 4, title: 'Portfolio Generator', description: 'SaaS platform that helps developers create beautiful portfolio websites in minutes.', tech: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma'], link: 'https://example.com/portfolio-generator' }
+    { id: 1, title: 'Saarthi AI', description: 'An AI-powered platform for personalized learning and skill development.', tech: ['FastAPI', 'Qdrant', 'HTML5', 'CSS3(Glassmorphism)', 'Vanilla JS',], link: 'https://github.com/Sagarkumar1911/EduQuest-AI.git' },
+    { id: 2 title: 'HR Management System', description: 'Developed a HR Management System to streamline employee data, attendance, leave management, and role-based access control.', tech: ['React', 'Node', 'MongoDB', 'Express'], link: 'https://github.com/bhavya277/HRMS_TH.git' },
+    { id: 3, title: 'Expense Manager', description: 'A full-featured expense manager with budget tracking and financial insights.', tech: ['PHP', 'MYSQL', 'JavaScript'], link: 'https://expensemanager27.great-site.net' },
+    { id: 4, title: 'Particle Tracking', description: 'It trackes your hand movement and responds with different shapes', tech: ['HTML', 'Three.js', 'MediaPipe', 'WebGL'], link: 'https://particle-tracking.vercel.app/' },
+    // { id: 4, title: 'Portfolio Generator', description: 'SaaS platform that helps developers create beautiful portfolio websites in minutes.', tech: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma'], link: 'https://example.com/portfolio-generator' }
   ];
 
   return (
