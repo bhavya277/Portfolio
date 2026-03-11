@@ -48,6 +48,7 @@ export default function App() {
     { skill: 'NumPy', value: 80 },
     { skill: 'Pandas', value: 80 },
     { skill: 'Cyber Security', value: 75 },
+    { skill: 'Blockchain', value: 75 },
     { skill: 'FastAPI', value: 70 },
     { skill: 'React', value: 75 }
   ];
@@ -55,27 +56,34 @@ export default function App() {
   const projects = [
     {
       id: 1,
+      title: 'Blockchain-Based Voting System',
+      description: 'A decentralized voting system built on blockchain technology.',
+      tech: ['React', 'FastAPI', 'Web3.js', 'Ethereum','Solidity','Firebase'],
+      link: 'https://github.com/bhavya277/Blockchain-Voting-System.git'
+    },
+    {
+      id: 2,
       title: 'Saarthi AI',
       description: 'An AI-powered platform for personalized learning and skill development.',
       tech: ['FastAPI', 'Qdrant', 'React', 'Three.js'],
       link: 'https://github.com/Sagarkumar1911/EduQuest-AI.git'
     },
     {
-      id: 2,
+      id: 3,
       title: 'HR Management System',
       description: 'Streamlined employee data, attendance, and role-based access control system.',
       tech: ['React', 'Node', 'MongoDB', 'Express'],
       link: 'https://github.com/bhavya277/HRMS_TH.git'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Expense Manager',
       description: 'A full-featured expense manager with budget tracking and financial insights.',
       tech: ['PHP', 'MySQL', 'JavaScript'],
       link: 'https://github.com/bhavya277/Expense-Manager.git'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Particle Tracking',
       description: 'Experimental 3D hand movement tracking using WebGL and MediaPipe.',
       tech: ['Three.js', 'MediaPipe', 'WebGL'],

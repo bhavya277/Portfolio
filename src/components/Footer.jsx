@@ -23,6 +23,7 @@ function Footer({ scrollToSection }) {
           <div className="footer-section">
             <h4>Projects</h4>
             <ul className="footer-links">
+              <li><a href="https://github.com/bhavya277/blockchain-based-Voting-System.git" target="_blank" rel="noopener noreferrer">Blockchain-Voting system</a></li>
               <li><a href="https://github.com/sagarkumar1911/EduQuest-AI.git" target="_blank" rel="noopener noreferrer">Saarthi AI</a></li>
               <li><a href="https://github.com/bhavya277/HRMS_TH.git" target="_blank" rel="noopener noreferrer">HR Management System</a></li>
               <li><a href="https://github.com/bhavya277/Expense-Manager.git" target="_blank" rel="noopener noreferrer">Expense Manager</a></li>
