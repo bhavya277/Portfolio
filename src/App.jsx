@@ -56,7 +56,7 @@ export default function App() {
   const projects = [
     {
       id: 1,
-      title: 'Blockchain-Based Voting System',
+      title: 'Blockchain Based Voting System',
       description: 'A decentralized voting system built on blockchain technology.',
       tech: ['React', 'FastAPI', 'Web3.js', 'Ethereum','Solidity','Firebase'],
       link: 'https://github.com/bhavya277/blockchain-based-Voting-System.git'
